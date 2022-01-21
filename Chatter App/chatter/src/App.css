@@ -1,0 +1,82 @@
+/* mobile */
+html {
+  font-size: 5px;
+}
+/* tablet */
+@media only screen and (min-width: 480px) {
+  html {
+      font-size: 10px;
+  }
+}
+/* desktop */
+@media only screen and (min-width: 768px) {
+  html {
+      font-size: 15px;
+  }
+}
+/* extra large */
+@media only screen and (min-width: 1024px) {
+  html {
+      font-size: 20px;
+  }
+}
+.App {
+  background: rgb(54, 190, 202);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header {
+  height: 6rem;
+  border-bottom: 3px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5rem;
+  background: rgba(243, 92, 4, 0.993);
+}
+.logo {
+  height: 5rem;
+  width: 5rem;
+  background: url("https://previews.123rf.com/images/kahovsky/kahovsky1712/kahovsky171200043/91317699-cute-smiling-funny-robot-chat-bot-in-speech-bubble-vector-modern-flat-cartoon-character-illustration.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+.footer {
+  height: 3rem;
+  border-top: 2px solid white;
+  display: flex;
+  align-items: center;
+  padding: 0 .5rem;
+  background: rgba(250, 255, 255, 0.897);
+  position: relative;
+}
+.text-input {
+  border: 1px solid white;
+  height: 2rem;
+  border-radius: 1rem;
+  padding: 0 .5rem;
+  background: black;
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}
+.send {
+  background: rgba(250, 255, 255, 0.897);
+  border-radius: 50%;
+  border: none;
+  height: 1.7rem;
+  width: 1.7rem;
+  position: absolute;
+  right: 1.15rem;
+  cursor: pointer;
+}
