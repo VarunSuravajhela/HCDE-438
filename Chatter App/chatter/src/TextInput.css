@@ -1,0 +1,29 @@
+.footer {
+    height: 3rem;
+    border-top: 2px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+    background: rgba(250, 255, 255, 0.897);
+    position: relative;
+  }
+  .text-input {
+    border: 1px solid white;
+    height: 2rem;
+    border-radius: 1rem;
+    padding: 0 .5rem;
+    background: black;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+  }
+  .send {
+    background: rgba(250, 255, 255, 0.897);
+    border-radius: 50%;
+    border: none;
+    height: 1.7rem;
+    width: 1.7rem;
+    position: absolute;
+    right: .75rem;
+    cursor: pointer;
+  }

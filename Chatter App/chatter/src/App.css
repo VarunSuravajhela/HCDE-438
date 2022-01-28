@@ -51,32 +51,35 @@ html {
   font-size: 3rem;
   margin-left: 1.5rem;
 }
-.footer {
-  height: 3rem;
-  border-top: 2px solid white;
+.messages {
   display: flex;
-  align-items: center;
-  padding: 0 .5rem;
-  background: rgba(250, 255, 255, 0.897);
-  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  overflow: auto;
+  max-height: calc(100vh - 3rem - 6rem);
+  min-height: calc(100vh - 3rem - 6rem);
 }
-.text-input {
-  border: 1px solid white;
-  height: 2rem;
-  border-radius: 1rem;
-  padding: 0 .5rem;
+.messageContainer {
+  display: inline-flex;
+  padding: .1rem;
+}
+.message {
   background: black;
-  width: 100%;
   color: white;
-  font-size: 20px;
+  border-radius: .3rem;
+  margin-left: -.25rem;
+  padding: .2rem .5rem;
+
 }
-.send {
-  background: rgba(250, 255, 255, 0.897);
-  border-radius: 50%;
-  border: none;
-  height: 1.7rem;
-  width: 1.7rem;
-  position: absolute;
-  right: 1.15rem;
-  cursor: pointer;
+.pointer {
+  width: 0; 
+  height: 0; 
+  border-top: .4rem solid transparent;
+  border-bottom: .4rem solid transparent; 
+  border-right:.7rem solid black;
+  margin-left: 0 auto;
+
 }
+
+
+
