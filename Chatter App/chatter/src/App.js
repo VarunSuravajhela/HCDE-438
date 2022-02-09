@@ -3,13 +3,14 @@ import { useState } from "react";
 import Message from "./Message";
 import "./TextInput.css";
 import TextInput from "./TextInput";
-import "./NamePicker";
+import NamePicker from './NamePicker';
 import Camera from 'react-snap-pic';
 
 
 function App() {
   const [messages, setMessages] = useState([]);
   const [showCamera, setShowCamera] = useState(false);
+  let [userName, setUsername] = useState("");
   function sendMessage(text) {
     setMessages([{text}, ...messages]);
   }
@@ -23,6 +24,7 @@ function App() {
         <header className="header">
           <div className="logo" />
           <span className="title">TALK TO ME :)</span>
+          <NamePicker setUsername={setUsername}/>
         </header>
       </div>
       <div className="messages">
@@ -33,6 +35,7 @@ function App() {
       <TextInput sendMessage={sendMessage} 
       showCamera={()=>setShowCamera(true)}/>
       {showCamera && <Camera takePicture={takePicture} />}
+
     </div>
   );
 }

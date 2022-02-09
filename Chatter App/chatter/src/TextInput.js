@@ -3,12 +3,12 @@ import { useState } from "react";
 import { FiSend, FiCamera } from 'react-icons/fi';
 
 function TextInput(props) {
-  const [text, setText] = useState(""); 
+  const [text, sT] = useState(""); 
   /*text is the state and setText is the method to change it */
 
   function send() {
     props.sendMessage(text);
-    setText("");
+    sT("");
   }
   function onKeyPress(e) {
     if (e.key === "Enter") {
@@ -25,7 +25,7 @@ function TextInput(props) {
       <input
         className="text-input"
         value={text}
-        onChange={(e) => setText(e.target.value)}
+        onChange={(e) => sT(e.target.value)}
         onKeyPress={onKeyPress}
       />
       <button className="send" onClick={send}>
